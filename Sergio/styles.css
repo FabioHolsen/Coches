@@ -6,4 +6,10 @@ nav{
     color: white;
     padding: 10px;
 }
- 
+
+ li{
+ float: left;
+ margin: 30px;
+ text-align: right;
+ }
+
