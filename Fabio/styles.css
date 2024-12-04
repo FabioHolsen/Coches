@@ -20,7 +20,7 @@ li {
 
 li a{
     padding: 10px;
-    font-size: 1.10rem;
+    font-size: 1.10em;
     color: white;
     font-weight: 700 ;
 }
@@ -62,7 +62,7 @@ li a{
     font-size: 3rem;
     font-weight: 600;
     text-shadow: 2px 2px 8px black;
-    text-align: center;
+    text-ali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gn: center;
 }
 
 .formulario{
@@ -73,10 +73,11 @@ li a{
     background-color: white;
     opacity: 0.8;
     border-radius: 10px;
-}
+    padding: 30px
+    }
 
 .formulario h2{
-    padding: 10px;
+    margin: 0px;
 }
 
 
