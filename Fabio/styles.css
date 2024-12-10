@@ -50,7 +50,7 @@ li a{
 }
 .portada {
     height: 500px;
-    background-image: url("Media/cochePortada.png");
+    background-image: url("media/fondoCoche.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
