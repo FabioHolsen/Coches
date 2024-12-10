@@ -30,23 +30,42 @@
         <div class="portada">
             <h1 class="roboto-regular">Empresa de alquiler de coches</h1>
             <div class="formulario">
-                <h2>Elige tu coche:</h2>
                 <form>
                     <div class="formularioInput">
-                        <div class="tipoCoche">
-                            <label for="tipoCoche">Tipo:</label>
-                            <select for="tipoCoche" name="tipoCoche">
-                                <option value="0">Sedan</option>
-                                <option value="1">Todoterreno</option>
-                                <option value="2">Turismo</option>
-                                <option value="3">Furgoneta</option>
-                            </select>
-                        </div>
+                        <h2>Elige tu coche:</h2>
+                        <div class="tipoCocheM">
+                            <div>
+                                <button>Sedan</button>
+                            </div>
+                            <div>
+                                <button>Todoterreno</button>
+                            </div>
+                            <div>
+                                <button>Turismo</button>
+                            </div>
+                            <div>
+                                <button>Furgoneta</button>
+                            </div>
+                            <div>
+                                <button>Cabriolet</button>
+                            </div>
+                        </div>           
                         <div class="datos">
+                            <h2>Tus datos:</h2>
                             <label for="nombreP">Nombre:</label>
                             <input id="nombreP" class="inputText" type="text">
+                            <label for="edad">Edad:</label>
+                            <select for="edad" name="inputEdad">
+                                <option value="0">20</option>
+                                <option value="1">21</option>
+                                <option value="2">22</option>
+                                <option value="3">23</option>
+                                <option value="4">24</option>
+                                <option value="5">25</option>
+                            </select>
                         </div>
                         <div class="fechaRyE">
+                        <h2>Fecha de recogida y entrega:</h2>
                         <label for="fechaR">Fecha de recogida:</label>
                         <input id="fechaR" type="date">
                         <label for="fechaE">Fecha de entrega:</label>
