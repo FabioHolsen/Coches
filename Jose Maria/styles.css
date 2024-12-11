@@ -40,3 +40,9 @@ main{
     height: 250px;
 }
 
+ul, li{
+
+    margin-top: 100px;
+    gap: 50px;
+    list-style: square;
+}

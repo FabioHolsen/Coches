@@ -1,0 +1,29 @@
+body{
+
+    background-color: bisque;
+}
+
+
+.coche1{
+
+    background-color: aqua ;
+    align-items: center;
+    size: 1000px;
+
+}
+
+.coche2{
+
+    background-color: lime;
+    
+}
+.coche3{
+
+    background-color: mediumseagreen;
+}
+
+
+.alquilar{
+
+    align-items: center;
+}
