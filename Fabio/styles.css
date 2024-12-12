@@ -49,7 +49,7 @@ li a{
     margin-bottom: 20px;
 }
 .portada {
-    height: 500px;
+    height: 100%;
     background-image: url("media/fondoCoche.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -84,6 +84,7 @@ li a{
 .formularioInput {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .formularioInput h2 {
@@ -91,17 +92,40 @@ li a{
 }
 .tipoCocheM {
     display: flex;
+    flex-direction: row;
     border-radius: 5px;
     gap: 0;
+    width: 100%;
 }
-.tipoCocheM div {
-    
+.tipoCocheM span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
 }
-.tipoCocheM button {
-    border: 0;
+
+.tipoCocheM label{
+    width: auto;
+    height: 100px;
+    flex-grow: 1;
 }
+
+.tipoCocheM input:checked + span {
+    background-color: #1581ed;
+    color: #fff;
+  }
+
 .inputText {
     background-color: #ffffff;
     border: 1px;
     border-radius: 5px;
+}
+.textoCoches{
+    font-size: 1.2rem;
+    padding: 1%;
 }
