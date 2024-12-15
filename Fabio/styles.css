@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body , html{
+body , main, html{
     margin: 0;
     background-color: white;
     width: 100vw;
@@ -11,11 +11,16 @@ h1, h2, h3, h4, h5, p, li, a{
     font-family: "Roboto", sans-serif;
 }
 header {
+    
     padding-left: 5%;
     padding-right: 5%;
     background-color: #1581ed;
 }
+ul {
+    display: flex;
+}
 li {
+    flex-grow: 1;
     float: left;
     list-style: none;
 }
@@ -25,6 +30,7 @@ li a{
     font-size: 1.10em;
     color: white;
     font-weight: 700 ;
+    text-decoration: none;
 }
 .cabecera {
     display: flex;
@@ -162,26 +168,47 @@ li a{
     height: 50px;
     align-items: center;
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 .nombreForm label {
     padding-left: 10px;
-    padding-right: 10px;
+    margin-bottom: 10px;
     font-size: 1.2rem;
     background-color: #1581ed;
     color: white;
     height: 50px;
     width: max-content;
     border-radius: 10px 0 0 10px;
+
 }
 
 .edadForm {
     flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 .edadForm select{
     height: 50px;
+    flex-grow: 1;
+    border: 0;
+    border-radius: 0 10px 10px 0;
+    font-size: 1.2rem;
+}
+.edadForm select:after {
+    border: 0;
 }
 
+.edadForm label {
+    height: 50px;
+    background-color: white;
+    flex-grow: 3;
+    border-radius: 10px 0 0 10px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-content: center;
+}
 *:focus {
     outline: none;
 }
