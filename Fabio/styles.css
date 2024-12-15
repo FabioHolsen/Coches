@@ -168,7 +168,7 @@ li a{
     height: 50px;
     align-items: center;
     padding-left: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 .nombreForm label {
     padding-left: 10px;
@@ -186,6 +186,7 @@ li a{
     flex-grow: 1;
     display: flex;
     align-items: center;
+    height: 50px;
 }
 
 .edadForm select{
