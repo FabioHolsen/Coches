@@ -199,10 +199,6 @@ li a{
     font-size: 1.2rem;
     background-color: white;
 }
-.edadForm ,select:hover{
-    background-color: grey;
-    border-radius: 0 10px 10px 0;
-}
 
 
 .edadForm label {
@@ -217,4 +213,29 @@ li a{
 }
 *:focus {
     outline: none;
+}
+
+.formRyE {
+    height: 50px;
+    display: flex;
+    font-size: 1.2rem;
+    border: 0;
+}
+.formRyE label {
+    align-content: center;
+    padding: 10px;
+    background-color: white;
+}
+.formRyE label:first-child{
+    border-radius: 10px 0 0 10px;
+}
+.formRyE input {
+    cursor: pointer;
+}
+.formRyE #fechaE {
+    border-radius: 0 10px 10px 0;
+}
+.grow1{
+    flex-grow: 1;
+    border: 0;
 }
