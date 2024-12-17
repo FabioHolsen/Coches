@@ -188,6 +188,7 @@ li a{
     display: flex;
     align-items: center;
     height: 50px;
+    border-radius: 0;
 }
 
 .edadForm select{
@@ -196,10 +197,13 @@ li a{
     border: 0;
     border-radius: 0 10px 10px 0;
     font-size: 1.2rem;
+    background-color: white;
 }
-.edadForm select:after {
-    border: 0;
+.edadForm ,select:hover{
+    background-color: grey;
+    border-radius: 0 10px 10px 0;
 }
+
 
 .edadForm label {
     height: 50px;
