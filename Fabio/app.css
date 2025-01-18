@@ -60,7 +60,23 @@ li a{
     margin-right: auto;
 }
 
-.tabla{
+.tablaDiv{
     padding: 5%;
-    border: 1px;
+
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(73, 73, 73);
+
+}
+th {
+    border: 2px solid rgb(73, 73, 73);
+    padding: 5px;
+    background-color: #5e9aad;
+}
+td{
+    border: 2px solid rgb(73, 73, 73);
+    padding: 5px;
+    background-color: #7bcbe6;
 }
