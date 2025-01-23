@@ -6,6 +6,10 @@ body , main, html{
     width: 100vw;
     font-family: "Roboto", sans-serif;
 }
+main {
+    display: flex;
+    flex-direction: column;
+}
 h1, h2, h3, h4, h5, p, li, a{
     font-family: "Roboto", sans-serif;
 }
@@ -60,8 +64,13 @@ li a{
     margin-right: auto;
 }
 
+.inicio {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .tablaDiv{
-    padding: 5% 25% 5% 25%;
+    padding: 2% 20% 2% 20%;
     display: flex;
 }
 
