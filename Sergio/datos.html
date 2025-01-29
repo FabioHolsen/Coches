@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="styles.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Coches</title>
+    <link rel="stylesheet" href="datos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <title>Coches</title>
 </head>
-<body>
 <header>
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(147, 2, 190);">
         <a class="navbar-brand" href="#">AutoCamp</a>
@@ -21,13 +21,10 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tipos de coche</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Monovolumen</a>
-                        <a class="dropdown-item" href="#">Camion</a>
-                        <a class="dropdown-item" href="#">SUV</a>
-                        <a class="dropdown-item" href="#">Deportivo</a>
-                        <a class="dropdown-item" href="#">Furgoneta</a>
-                        <a class="dropdown-item" href="#">Lujo</a>
-                        <a class="dropdown-item" href="#">Casual</a>
+                        <a class="dropdown-item" href="#">Model s</a>
+                        <a class="dropdown-item" href="#">Mustang</a>
+                        <a class="dropdown-item" href="#">Corella</a>
+                        <a class="dropdown-item" href="#">Civic</a>
                     </div>
                 </li>
             </ul>
@@ -37,29 +34,47 @@
             </form>
         </div>
     </nav>
-        <div class="foto1">
-            <div class="indice">
-                <img src="Media/fotocoche.webp"></div> 
-        </div>
 </header>
-<br>
-<main>
-    <div>
-        <h2>Elije tu coche:</h2>
-        <div class="form-group">
-          <label for="coche"></label>
-          <select class="form-control" name="coche" id="coche">
-            <option>SUV</option>
-            <option>Furgonetas</option>
-            <option>Coche</option>
-            <option>Camion</option>
-          </select>
-        </div>
-      </div>
-</main>
-<footer>
-</footer>   
+<body>
+    <h1>Modelos de Coches</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Modelo</th>
+                <th>Marca</th>
+                <th>Años</th>
+                <th>Detalles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Model S</td>
+                <td>Tesla</td>
+                <td>2025</td>
+                <td><a href="detalles/model-s.html" class="details-button">Detalles</a></td>
+            </tr>
+            <tr>
+                <td>Mustang</td>
+                <td>Ford</td>
+                <td>2024</td>
+                <td><a href="detalles/mustang.html" class="details-button">Detalles</a></td>
+            </tr>
+            <tr>
+                <td>Civic</td>
+                <td>Honda</td>
+                <td>2023</td>
+                <td><a href="detalles/civic.html" class="details-button">Detalles</a></td>
+            </tr>
+            <tr>
+                <td>Corolla</td>
+                <td>Toyota</td>
+                <td>2022</td>
+                <td><a href="detalles/corolla.html" class="details-button">Detalles</a></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
