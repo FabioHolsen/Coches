@@ -259,18 +259,31 @@ li a{
 }
 
 .qSomos{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./media/mercedes.webp') ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./media/mercedes.webp') ;
     height: 750px;
     background-size: 100%;
     background-color: black;
     background-repeat: no-repeat;
+    padding: 20px;
+    color: white;
 }
 
 .qSomos h1 {
-    padding: 20px;
+    padding-top: 250px;
+    padding-left: 100px;
+    font-size: 3rem;
 }
 
 .footer{
-    background-color: #1581ed;
+    background-color: #0a5299;
     color: white;
+    text-align: center;
+}
+.parrafo{
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 700px;
+    font-weight:400 ;
 }
