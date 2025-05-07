@@ -1,3 +1,4 @@
+CREATE USER 'ubuntu'@'%' IDENTIFIED BY 'password';
 CREATE DATABASE autocamp;
 
 USE autocamp;
