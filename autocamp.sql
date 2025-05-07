@@ -12,9 +12,13 @@ CREATE TABLE cliente (
     PRIMARY KEY (codcli)
 );
 
-
-
-
+CREATE TABLE gama (
+    codgama character(2) NOT NULL,
+    nomgama character varying(20),
+    stock integer,
+    precio float,
+    PRIMARY KEY (codgama)
+);
 CREATE TABLE coche (
     matricula character(7) NOT NULL,
     modelo character varying(40),
@@ -27,19 +31,6 @@ CREATE TABLE coche (
     PRIMARY KEY (matricula),
     FOREIGN KEY (codgama) REFERENCES gama (codgama)
 );
-
-
-
-CREATE TABLE gama (
-    codgama character(2) NOT NULL,
-    nomgama character varying(20),
-    stock integer,
-    precio float,
-    PRIMARY KEY (codgama)
-);
-
-
-
 
 CREATE TABLE reserva (
     codreserva integer NOT NULL,
