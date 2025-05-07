@@ -27,7 +27,7 @@ CREATE TABLE coche (
     maletas integer,
     foto character varying(15),
     codgama character(2) NOT NULL,
-    PRIMARY KEY (matricula),
+    PRIMARY KEY (matricula)
 );
 
 CREATE TABLE reserva (
@@ -45,7 +45,7 @@ CREATE TABLE reserva (
     f_devolucion date,
     s_motor character(1),
     s_plazas integer,
-    PRIMARY KEY (codreserva),
+    PRIMARY KEY (codreserva)
 );
 
 INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('1   ', 'Pepe', 'García', 'Ausiach March, 23', 'pep@gmailx.com');
