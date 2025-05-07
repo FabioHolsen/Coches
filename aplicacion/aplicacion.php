@@ -13,7 +13,7 @@
         error_reporting(E_ALL);
         // Conectar a la base de datos
         // Cambiar el servername por el que proceda: localhost, IP, url, …
-        $servername = "mysql";
+        $servername = "127.0.0.1";
         $username = "ubuntu";
         $password = "password";
         $dbname = "autocamp";

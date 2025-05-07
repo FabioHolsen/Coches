@@ -1,3 +1,5 @@
+CREATE USER 'ubuntu'@'localhost' IDENTIFIED BY 'password';
+grant all privileges on *.* to 'ubuntu'@'localhost' with grant option;
 CREATE DATABASE autocamp;
 
 USE autocamp;
@@ -69,7 +71,7 @@ INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto,
 
 
 
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('L1', 'Lujo', 2, 23,00);
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F2', 'Familiar', 3, 23,00);
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('T1', '4 x 4', 1, 23,00);
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F1', 'Familiar', 4, 15,00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('L1', 'Lujo', 2, 23.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F2', 'Familiar', 3, 23.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('T1', '4 x 4', 1, 23.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F1', 'Familiar', 4, 15.00);
