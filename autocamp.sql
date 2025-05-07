@@ -1,4 +1,3 @@
-CREATE USER 'ubuntu'@'%' IDENTIFIED BY 'password';
 CREATE DATABASE autocamp;
 
 USE autocamp;
@@ -29,7 +28,6 @@ CREATE TABLE coche (
     foto character varying(15),
     codgama character(2) NOT NULL,
     PRIMARY KEY (matricula),
-    FOREIGN KEY (codgama) REFERENCES gama (codgama)
 );
 
 CREATE TABLE reserva (
@@ -40,7 +38,7 @@ CREATE TABLE reserva (
     dias integer,
     lugar character varying(50),
     importe float DEFAULT 0,
-    gama character varying(2) NOT NULL,
+    cgama character varying(2) NOT NULL,
     codcliente character varying(4) NOT NULL,
     coche character(7),
     f_recogida date,
@@ -48,8 +46,6 @@ CREATE TABLE reserva (
     s_motor character(1),
     s_plazas integer,
     PRIMARY KEY (codreserva),
-    FOREIGN KEY (codcliente) REFERENCES cliente(codcli),
-    FOREIGN KEY (gama) REFERENCES gama(codgama)
 );
 
 INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('1   ', 'Pepe', 'García', 'Ausiach March, 23', 'pep@gmailx.com');
