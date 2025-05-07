@@ -50,6 +50,10 @@ CREATE TABLE reserva (
     PRIMARY KEY (codreserva)
 );
 
+alter table coche add foreign key (codgama) references gama (codgama);
+alter table reserva add foreign key (cgama) references gama (codgama);
+alter table reserva add foreign key (codcliente) references cliente (codcli);
+
 INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('1   ', 'Pepe', 'García', 'Ausiach March, 23', 'pep@gmailx.com');
 INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('2   ', 'Lucas', 'Iniesta', 'Ausiach March, 23', 'lui@gmailx.com');
 INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('3   ', 'Ana', 'Lorca Sanz', 'Ausiach March, 23', 'annta@gmailx.com');
