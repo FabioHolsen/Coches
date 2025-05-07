@@ -23,8 +23,7 @@ CREATE TABLE coche (
     maletas integer,
     foto character varying(15),
     codgama character(2) NOT NULL,
-    coste float
-    PRIMARY KEY (matricula)
+    PRIMARY KEY (matricula),
     FOREIGN KEY (codgama) REFERENCES gama (codgama)
 );
 
@@ -60,3 +59,29 @@ CREATE TABLE reserva (
     FOREIGN KEY (codcliente) REFERENCES cliente(codcli),
     FOREIGN KEY (gama) REFERENCES gama(codgama)
 );
+
+INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('1   ', 'Pepe', 'García', 'Ausiach March, 23', 'pep@gmailx.com');
+INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('2   ', 'Lucas', 'Iniesta', 'Ausiach March, 23', 'lui@gmailx.com');
+INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('3   ', 'Ana', 'Lorca Sanz', 'Ausiach March, 23', 'annta@gmailx.com');
+
+
+
+
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama, coste) VALUES ('1111AAA', 'Volvo z', 'F', 'A', 5, 3, 'foto1.jpg', 'F1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama, coste) VALUES ('1112AAA', 'Volvo EX40', 'E', 'A', 5, 3, 'foto2.jpg', 'F1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama, coste) VALUES ('1001BBB', 'Ford Focus', 'H', 'A', 5, 3, 'foto4.jpg', 'F1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama, coste) VALUES ('1003TTT', 'Citroen e-c3', 'E', 'A', 7, 4, 'foto5.jpg', 'T1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama, coste) VALUES ('3003LLL', 'Mercedes', 'E', 'A', 7, 4, 'foto6.jpg', 'L1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama, coste) VALUES ('3333BBB', 'Volvo XC90', 'E', 'A', 7, 4, 'foto7.jpg', 'L1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama, coste) VALUES ('4444NNN', 'Volvo XC1', 'H', 'A', 5, 4, 'foto10.jpg', 'F1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama, coste) VALUES ('1113AAA', 'Audi A3', 'H', 'M', 5, 4, 'foto3.jpg', 'F2');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama, coste) VALUES ('6666NNN', 'Fiesta', 'F', 'M', 5, 3, 'foto8.jpg', 'F2');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama, coste) VALUES ('6612NNN', 'Audi A3', 'F', 'M', 5, 3, 'foto9.jpg', 'F2');
+
+
+
+
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('L1', 'Lujo', 2, 23,00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F2', 'Familiar', 3, 23,00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('T1', '4 x 4', 1, 23,00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F1', 'Familiar', 4, 15,00);
