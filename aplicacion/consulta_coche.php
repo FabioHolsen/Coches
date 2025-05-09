@@ -7,6 +7,22 @@
         <title>información coche</title>
     </head>
     <body>
+        <?php
+        // Mostrar todos los errores (útil para debugging)
+        ini_set('display_errors', 1);
+        error_reporting(E_ALL);
+        // Conectar a la base de datos
+        // Cambiar el servername por el que proceda: localhost, IP, url, …
+        $servername = "127.0.0.1";
+        $username = "ubuntu";
+        $password = "password";
+        $dbname = "autocamp";
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Verificar la conexión
+        if ($conn->connect_error) {
+        die("Conexión fallida: " . $conn->connect_error);
+        }
+        ?>
         <header>
             <div class="cabecera">
                 <div class="titulo">
@@ -45,8 +61,10 @@
                     </thead>
                     <tbody>
                         <?php
+
+                        $matricula = $_GET['matricula'];
                         // Consultar los datos
-                        $sql = "SELECT * FROM coche";
+                        $sql = "SELECT * FROM coche where matricula='{$matricula}'";
                         $result = $conn->query($sql);
                         if ($result === false) {
                         die("Error en la consulta: " . $conn->error);
