@@ -57,6 +57,7 @@
                             <th>Motor</th>
                             <th>Plazas</th>
                             <th>Maletas</th>
+                            <th>Imagen referencia</th>
                         </tr>
                     </thead>
                     <tbody>
