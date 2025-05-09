@@ -3,26 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="./app.css" >
-        <title>Aplicacón Coches</title>
+        <link rel="stylesheet" href="./consulta.css" >
+        <title>información coche</title>
     </head>
     <body>
-        <?php
-        // Mostrar todos los errores (útil para debugging)
-        ini_set('display_errors', 1);
-        error_reporting(E_ALL);
-        // Conectar a la base de datos
-        // Cambiar el servername por el que proceda: localhost, IP, url, …
-        $servername = "127.0.0.1";
-        $username = "ubuntu";
-        $password = "password";
-        $dbname = "autocamp";
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        // Verificar la conexión
-        if ($conn->connect_error) {
-        die("Conexión fallida: " . $conn->connect_error);
-        }
-        ?>
         <header>
             <div class="cabecera">
                 <div class="titulo">
@@ -37,19 +21,26 @@
                             <a href="../index.html#quienes-somos">Quienes somos</a>
                         </li>
                         <li>
-                            <a href="./aplicacion.php">Portal</a>
+                            <a href="./aplicacion.html">Portal</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </header>
         <main>
+            <div class="inicio">
+                <h1>Información del coche:</h1>
+            </div>
             <div class="tablaDiv">
                 <table class="center tabla">
                     <thead>
                         <tr>
                             <th>Matricula</th>
                             <th>Modelo</th>
+                            <th>Combustible</th>
+                            <th>Motor</th>
+                            <th>Plazas</th>
+                            <th>Maletas</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -65,7 +56,13 @@
                         echo " <tr>
                         <td>{$row['matricula']}</td>
                         <td>{$row['modelo']}</td>
-                        </tr>";
+                        <td>{$row['combustible']}</td>
+                        <td>{$row['motor']}</td>
+                        <td>{$row['plazas']}</td>
+                        <td>{$row['maletas']}</td>
+                        </tr>
+                        <img src="./media/{$row['foto']}">
+                        ";
                         }
                         }
                         ?>

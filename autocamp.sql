@@ -28,6 +28,7 @@ CREATE TABLE coche (
     maletas integer,
     foto character varying(15),
     codgama character(2) NOT NULL,
+    foto CHARACTER,
     PRIMARY KEY (matricula)
 );
 
@@ -63,16 +64,16 @@ INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('T1', '4 x 4', 1, 23.
 INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F1', 'Familiar', 4, 15.00);
 
 
-INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('1111AAA', 'Volvo z', 'F', 'A', 5, 3, 'foto1.jpg', 'F1');
-INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('1112AAA', 'Volvo EX40', 'E', 'A', 5, 3, 'foto2.jpg', 'F1');
-INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('1001BBB', 'Ford Focus', 'H', 'A', 5, 3, 'foto4.jpg', 'F1');
-INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('1003TTT', 'Citroen e-c3', 'E', 'A', 7, 4, 'foto5.jpg', 'T1');
-INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('3003LLL', 'Mercedes', 'E', 'A', 7, 4, 'foto6.jpg', 'L1');
-INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('3333BBB', 'Volvo XC90', 'E', 'A', 7, 4, 'foto7.jpg', 'L1');
-INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('4444NNN', 'Volvo XC1', 'H', 'A', 5, 4, 'foto10.jpg', 'F1');
-INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('1113AAA', 'Audi A3', 'H', 'M', 5, 4, 'foto3.jpg', 'F2');
-INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('6666NNN', 'Fiesta', 'F', 'M', 5, 3, 'foto8.jpg', 'F2');
-INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('6612NNN', 'Audi A3', 'F', 'M', 5, 3, 'foto9.jpg', 'F2');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama,foto) VALUES ('1111AAA', 'Volvo z', 'F', 'A', 5, 3, 'foto1.jpg', 'F1','1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama,foto) VALUES ('1112AAA', 'Volvo EX40', 'E', 'A', 5, 3, 'foto2.jpg', 'F1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama,foto) VALUES ('1001BBB', 'Ford Focus', 'H', 'A', 5, 3, 'foto4.jpg', 'F1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama,foto) VALUES ('1003TTT', 'Citroen e-c3', 'E', 'A', 7, 4, 'foto5.jpg', 'T1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama,foto) VALUES ('3003LLL', 'Mercedes', 'E', 'A', 7, 4, 'foto6.jpg', 'L1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama,foto) VALUES ('3333BBB', 'Volvo XC90', 'E', 'A', 7, 4, 'foto7.jpg', 'L1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama,foto) VALUES ('4444NNN', 'Volvo XC1', 'H', 'A', 5, 4, 'foto10.jpg', 'F1');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama,foto) VALUES ('1113AAA', 'Audi A3', 'H', 'M', 5, 4, 'foto3.jpg', 'F2');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama,foto) VALUES ('6666NNN', 'Fiesta', 'F', 'M', 5, 3, 'foto8.jpg', 'F2');
+INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama,foto) VALUES ('6612NNN', 'Audi A3', 'F', 'M', 5, 3, 'foto9.jpg', 'F2');
 
 
 
