@@ -50,7 +50,7 @@
                         <tr>
                             <th>Matricula</th>
                             <th>Modelo</th>
-                            <th>Ver más</th>
+                            <th>Consulta del coche</th>
                         </tr>
                     </thead>
                     <tbody>
