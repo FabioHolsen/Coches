@@ -28,7 +28,6 @@ CREATE TABLE coche (
     maletas integer,
     foto character varying(15),
     codgama character(2) NOT NULL,
-    foto CHARACTER,
     PRIMARY KEY (matricula)
 );
 
