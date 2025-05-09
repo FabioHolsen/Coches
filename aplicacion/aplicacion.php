@@ -50,6 +50,7 @@
                         <tr>
                             <th>Matricula</th>
                             <th>Modelo</th>
+                            <th>Ver más</th>
                         </tr>
                     </thead>
                     <tbody>
