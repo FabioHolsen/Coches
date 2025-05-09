@@ -1,5 +1,4 @@
-CREATE USER 'ubuntu'@'localhost' IDENTIFIED BY 'password';
-grant all privileges on *.* to 'ubuntu'@'localhost' with grant option;
+
 CREATE DATABASE autocamp;
 
 USE autocamp;
