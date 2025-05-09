@@ -62,10 +62,10 @@
                         }
                         if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
-                        echo " <tr>
+                        echo " 
                         <td>{$row['matricula']}</td>
                         <td>{$row['modelo']}</td>
-                        <td><a href="">Ver más</a></td>
+                        <td><a href='./consulta_coche.php'>Ver más</a></td>
                         </tr>";
                         }
                         }

@@ -61,7 +61,7 @@
                         <td>{$row['plazas']}</td>
                         <td>{$row['maletas']}</td>
                         </tr>
-                        <img src="./media/{$row['foto']}">
+                        <img src='./media/{$row['foto']}'>
                         ";
                         }
                         }
