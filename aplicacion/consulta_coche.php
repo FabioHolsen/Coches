@@ -78,8 +78,9 @@
                         <td>{$row['motor']}</td>
                         <td>{$row['plazas']}</td>
                         <td>{$row['maletas']}</td>
+                        <td><img src='../media/{$row['foto']}'></td>
                         </tr>
-                        <img src='./media/{$row['foto']}'>
+                        
                         ";
                         }
                         }
