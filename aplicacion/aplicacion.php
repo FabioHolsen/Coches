@@ -65,6 +65,7 @@
                         echo " <tr>
                         <td>{$row['matricula']}</td>
                         <td>{$row['modelo']}</td>
+                        <td><a href="">Ver más</a></td>
                         </tr>";
                         }
                         }
