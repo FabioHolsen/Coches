@@ -57,7 +57,10 @@ INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('1   ', 
 INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('2   ', 'Lucas', 'Iniesta', 'Ausiach March, 23', 'lui@gmailx.com');
 INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('3   ', 'Ana', 'Lorca Sanz', 'Ausiach March, 23', 'annta@gmailx.com');
 
-
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('L1', 'Lujo', 2, 23.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F2', 'Familiar', 3, 23.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('T1', '4 x 4', 1, 23.00);
+INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F1', 'Familiar', 4, 15.00);
 
 
 INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('1111AAA', 'Volvo z', 'F', 'A', 5, 3, 'foto1.jpg', 'F1');
@@ -74,7 +77,3 @@ INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto,
 
 
 
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('L1', 'Lujo', 2, 23.00);
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F2', 'Familiar', 3, 23.00);
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('T1', '4 x 4', 1, 23.00);
-INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F1', 'Familiar', 4, 15.00);
