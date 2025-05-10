@@ -55,7 +55,7 @@
                             if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()) {
                             echo "
-                            <table class="center tabla">
+                            <table class='center tabla'>
                                 <thead>
                                     <tr>
                                         <th>Matricula</th>
