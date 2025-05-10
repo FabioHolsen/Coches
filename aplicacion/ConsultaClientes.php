@@ -61,7 +61,7 @@
                     <tbody>
                         <?php
                         // Consultar los datos
-                        $sql = "SELECT * FROM cliente'";
+                        $sql = "SELECT * FROM cliente";
                         $result = $conn->query($sql);
                         if ($result === false) {
                         die("Error en la consulta: " . $conn->error);
