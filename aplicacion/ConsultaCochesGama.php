@@ -47,6 +47,21 @@
             <div class="tablaDiv">
             <?php
                             // Consultar los datos
+                            $sql = "SELECT * FROM gama  where codgama = 'F1'";
+                            $result = $conn->query($sql);
+                            if ($result === false) {
+                            die("Error en la consulta: " . $conn->error);
+                            }
+                            if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()) {
+                            echo "
+                            <h1>Gama {['nomgama']}";
+                            
+                            }
+                            }
+                ?>
+                <?php
+                            // Consultar los datos
                             $sql = "SELECT * FROM coche inner join gama on coche.codgama = gama.codgama  where coche.codgama = 'F1'";
                             $result = $conn->query($sql);
                             if ($result === false) {
