@@ -132,48 +132,35 @@
                         ?>
                     </tbody>
                 </table>
-                <?php
-                        // Consultar los datos
-                        $sql = "SELECT * FROM gama where codgama ='T1'";
-                        $result = $conn->query($sql);
-                        if ($result === false) {
-                        die("Error en la consulta: " . $conn->error);
-                        }
-                        if ($result->num_rows > 0) {
-                        while($row = $result->fetch_assoc()) {
-                        echo " 
-                        <h1>Gama T1<h1>"
-                        }
-                        }
-                        ?>
-                    
                 <table class="center tabla">
-                    <thead>
-                        <tr>
-                            <th>Matricula</th>
-                            <th>Modelo</th>
-                            <th>Consulta del coche</th>
-                        </tr>
-                    </thead>
-                    <tbody>
                         <?php
                         // Consultar los datos
-                        $sql = "SELECT * FROM coche where codgama = 'T1'";
+                        $sql = "SELECT * FROM coche inner join gama on coche.codgama = gama.codgama  where coche.codgama = 'T1'";
                         $result = $conn->query($sql);
                         if ($result === false) {
                         die("Error en la consulta: " . $conn->error);
                         }
                         if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
-                        echo " 
-                        <td>{$row['matricula']}</td>
-                        <td>{$row['modelo']}</td>
-                        <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
-                        </tr>";
+                        echo "
+                        <h1>Gama {$row['gama.nomgama']}</h1>
+                        <thead>
+                            <tr>
+                                <th>Matricula</th>
+                                <th>Modelo</th>
+                                <th>Consulta del coche</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{$row['matricula']}</td>
+                                <td>{$row['modelo']}</td>
+                                <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
+                            </tr>
+                        </tbody>";
                         }
                         }
-                        ?>
-                    </tbody>
+                        ?>                    
                 </table>
             </div>
         </main>
