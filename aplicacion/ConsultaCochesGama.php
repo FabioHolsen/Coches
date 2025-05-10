@@ -132,19 +132,7 @@
                         ?>
                     </tbody>
                 </table>
-                <?php
-                        // Consultar los datos
-                    $sql = "SELECT * FROM gama where codgama ='T1'";
-                    $result = $conn->query($sql);
-                    if ($result === false) {
-                    die("Error en la consulta: " . $conn->error);
-                    }
-                    if ($result->num_rows > 0) {
-                    while($row = $result->fetch_assoc()) {
-                    echo "<h1>Gama {$row['nomgama']}</h1>"
-                    }
-                    }
-                ?>
+                
                 <table class="center tabla">
                     <thead>
                         <tr>
