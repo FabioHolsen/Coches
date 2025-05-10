@@ -75,7 +75,7 @@
                             }
                             }
                 ?>    
-                <?php
+                <!-- <?php
                             // Consultar los datos
                             $sql = "SELECT * FROM coche inner join gama on coche.codgama = gama.codgama  where coche.codgama = 'F2'";
                             $result = $conn->query($sql);
@@ -168,4 +168,4 @@
             </div>
         </main>
     </body>
-</html>
+</html> -->
