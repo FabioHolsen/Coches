@@ -156,7 +156,7 @@
                     <tbody>
                         <?php
                         // Consultar los datos
-                        $sql = "SELECT * FROM coche inner join gama on coche.codgama = gama.codgama where coche.codgama ='T1'";
+                        $sql = "SELECT * FROM coche";
                         $result = $conn->query($sql);
                         if ($result === false) {
                         die("Error en la consulta: " . $conn->error);
@@ -166,7 +166,6 @@
                         echo " 
                         <td>{$row['matricula']}</td>
                         <td>{$row['modelo']}</td>
-                        <td>{$row['gama.precio']}</td>
                         <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
                         </tr>";
                         }
