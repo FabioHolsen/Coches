@@ -37,7 +37,7 @@
                             <a href="../index.html#quienes-somos">Quienes somos</a>
                         </li>
                         <li>
-                            <a href="./aplicacion.php">Portal</a>
+                            <a href="./MenuConsultas.html">Portal</a>
                         </li>
                     </ul>
                 </div>

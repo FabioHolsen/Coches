@@ -90,3 +90,28 @@ td a{
     text-decoration: none;
     color: black;
 }
+
+.menuC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blockC {
+    padding: 10px;
+    border: black;
+    background-color: #1581ed;
+    width: 30%;
+    text-align: center;
+}
+.blockC:first-of-type{
+    border-radius: 10px 10px 0 0;
+}
+.blockC:last-of-type{
+    border-radius: 0 0 10px 10px;
+
+}
+.blockC a {
+    text-decoration: none;
+    color: white;
+}
