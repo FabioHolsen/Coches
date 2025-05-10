@@ -154,6 +154,7 @@
                         echo " 
                         <td>{$row['matricula']}</td>
                         <td>{$row['modelo']}</td>
+                        <td>{$row['gama.precio']}</td>
                         <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
                         </tr>";
                         }
