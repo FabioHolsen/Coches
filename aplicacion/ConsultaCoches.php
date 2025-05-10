@@ -74,6 +74,7 @@
                     </tbody>
                 </table>
             </div>
+            <h2><a href="./MenuConsultas.html">Volver</h2></a>
         </main>
     </body>
 </html>

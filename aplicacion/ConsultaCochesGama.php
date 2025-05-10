@@ -57,7 +57,7 @@
                                 while($row = $result->fetch_assoc()) {
                                 echo "
                                 <h1>Gama {$row['nomgama']}</h1>
-                                <h2>Precio {$row['precio']}</h2>";                            
+                                <h2>Precio: {$row['precio']} Euros</h2>";                            
                                 }
                                 }
                     ?>
@@ -106,7 +106,7 @@
                                 while($row = $result->fetch_assoc()) {
                                 echo "
                                 <h1>Gama {$row['nomgama']}</h1>
-                                <h2>Precio {$row['precio']}</h2>";                            
+                                <h2>Precio: {$row['precio']} Euros</h2>";                            
                                 }
                                 }
                     ?>
@@ -155,7 +155,7 @@
                                 while($row = $result->fetch_assoc()) {
                                 echo "
                                 <h1>Gama {$row['nomgama']}</h1>
-                                <h2>Precio {$row['precio']}</h2>";                            
+                                <h2>Precio: {$row['precio']} Euros</h2>";                            
                                 }
                                 }
                     ?>
@@ -204,7 +204,7 @@
                                 while($row = $result->fetch_assoc()) {
                                 echo "
                                 <h1>Gama {$row['nomgama']}</h1>
-                                <h2>Precio {$row['precio']}</h2>";                            
+                                <h2>Precio: {$row['precio']} Euros</h2>";                            
                                 }
                                 }
                     ?>
@@ -242,6 +242,7 @@
                     </table>
                 </div>      
             </div>
+            <h2><a href="./MenuConsultas.html">Volver</h2></a>
         </main>
     </body>
 </html>
