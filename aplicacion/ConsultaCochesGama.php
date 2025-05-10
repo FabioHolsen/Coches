@@ -45,36 +45,7 @@
         </header>
         <main>
             <div class="tablaDiv">
-                <?php
-                            // Consultar los datos
-                            $sql = "SELECT * FROM coche inner join gama on coche.codgama = gama.codgama  where coche.codgama = 'F1'";
-                            $result = $conn->query($sql);
-                            if ($result === false) {
-                            die("Error en la consulta: " . $conn->error);
-                            }
-                            if ($result1->num_rows > 0) {
-                            while($row = $result1->fetch_assoc()) {
-                            echo "
-                            <h1>Gama {$row['nomgama']}</h1>
-                            <table class="center tabla">
-                                <thead>
-                                    <tr>
-                                        <th>Matricula</th>
-                                        <th>Modelo</th>
-                                        <th>Consulta del coche</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>{$row['matricula']}</td>
-                                        <td>{$row['modelo']}</td>
-                                        <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>";
-                            }
-                            }
-                ?>                           
+                           
             </div>
         </main>
     </body>
