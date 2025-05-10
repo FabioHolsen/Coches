@@ -74,7 +74,6 @@
                         ?>
                     </tbody>
                 </table>
-                <div class="tablaDiv">
                 <h1>Gama F2</h1>
                 <table class="center tabla">
                     <thead>
@@ -104,7 +103,6 @@
                         ?>
                     </tbody>
                 </table>
-                <div class="tablaDiv">
                 <h1>Gama L1</h1>
                 <table class="center tabla">
                     <thead>
@@ -134,7 +132,6 @@
                         ?>
                     </tbody>
                 </table>
-                <div class="tablaDiv">
                 <h1>Gama T1</h1>
                 <table class="center tabla">
                     <thead>
