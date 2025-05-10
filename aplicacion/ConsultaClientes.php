@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="./app.css" >
-        <title>Lista de Vehiculos</title>
+        <link rel="stylesheet" href="./consulta.css" >
+        <title>Información coche</title>
     </head>
     <body>
         <?php
@@ -44,30 +44,39 @@
             </div>
         </header>
         <main>
+            <div class="inicio">
+                <h1>Información del coche:</h1>
+            </div>
             <div class="tablaDiv">
                 <table class="center tabla">
                     <thead>
                         <tr>
-                            <th>Matricula</th>
-                            <th>Modelo</th>
-                            <th>Consulta del coche</th>
+                            <th>Codigo de cliente</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Direccion</th>
+                            <th>Mail</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
                         // Consultar los datos
-                        $sql = "SELECT * FROM coche";
+                        $sql = "SELECT * FROM cliente'";
                         $result = $conn->query($sql);
                         if ($result === false) {
                         die("Error en la consulta: " . $conn->error);
                         }
                         if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
-                        echo " 
-                        <td>{$row['matricula']}</td>
-                        <td>{$row['modelo']}</td>
-                        <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
-                        </tr>";
+                        echo " <tr>
+                        <td>{$row['codcli']}</td>
+                        <td>{$row['nombre']}</td>
+                        <td>{$row['apellido']}</td>
+                        <td>{$row['direccion']}</td>
+                        <td>{$row['mail']}</td>
+                        </tr>
+                        
+                        ";
                         }
                         }
                         ?>
