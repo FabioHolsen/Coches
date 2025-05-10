@@ -48,14 +48,14 @@
                 <?php
                             // Consultar los datos
                             $sql = "SELECT * FROM coche inner join gama on coche.codgama = gama.codgama  where coche.codgama = 'F1'";
-                            $result = $conn->query($sql);
+                            $result1 = $conn->query($sql);
                             if ($result === false) {
                             die("Error en la consulta: " . $conn->error);
                             }
-                            if ($result->num_rows > 0) {
-                            while($row = $result->fetch_assoc()) {
+                            if ($result1->num_rows > 0) {
+                            while($row1 = $result1->fetch_assoc()) {
                             echo "
-                            <h1>Gama {$row['nomgama']}</h1>
+                            <h1>Gama {$row1['nomgama']}</h1>
                             <table class="center tabla">
                             <thead>
                                 <tr>
@@ -66,26 +66,26 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>{$row['matricula']}</td>
-                                    <td>{$row['modelo']}</td>
-                                    <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
+                                    <td>{$row1['matricula']}</td>
+                                    <td>{$row1['modelo']}</td>
+                                    <td><a href='consulta_coche.php?matricula={$row1['matricula']}'>Ver más</a></td>
                                 </tr>
                             </tbody>
                             </table>";
                             }
                             }
                 ?>    
-                <!-- <?php
+                <?php
                             // Consultar los datos
                             $sql = "SELECT * FROM coche inner join gama on coche.codgama = gama.codgama  where coche.codgama = 'F2'";
-                            $result = $conn->query($sql);
-                            if ($result === false) {
+                            $result2 = $conn->query($sql);
+                            if ($result2 === false) {
                             die("Error en la consulta: " . $conn->error);
                             }
-                            if ($result->num_rows > 0) {
-                            while($row = $result->fetch_assoc()) {
+                            if ($result2->num_rows > 0) {
+                            while($row2 = $result2->fetch_assoc()) {
                             echo "
-                            <h1>Gama {$row['nomgama']}</h1>
+                            <h1>Gama {$row2['nomgama']}</h1>
                             <table class="center tabla">
                             <thead>
                                 <tr>
@@ -96,9 +96,9 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>{$row['matricula']}</td>
-                                    <td>{$row['modelo']}</td>
-                                    <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
+                                    <td>{$row2['matricula']}</td>
+                                    <td>{$row2['modelo']}</td>
+                                    <td><a href='consulta_coche.php?matricula={$row2['matricula']}'>Ver más</a></td>
                                 </tr>
                             </tbody>
                             </table>";
@@ -108,14 +108,14 @@
                 <?php
                             // Consultar los datos
                             $sql = "SELECT * FROM coche inner join gama on coche.codgama = gama.codgama  where coche.codgama = 'L1'";
-                            $result = $conn->query($sql);
-                            if ($result === false) {
+                            $result3 = $conn->query($sql);
+                            if ($result3 === false) {
                             die("Error en la consulta: " . $conn->error);
                             }
-                            if ($result->num_rows > 0) {
-                            while($row = $result->fetch_assoc()) {
+                            if ($result3->num_rows > 0) {
+                            while($row3 = $result3->fetch_assoc()) {
                             echo "
-                            <h1>Gama {$row['nomgama']}</h1>
+                            <h1>Gama {$row3['nomgama']}</h1>
                             <table class="center tabla">
                             <thead>
                                 <tr>
@@ -126,26 +126,26 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>{$row['matricula']}</td>
-                                    <td>{$row['modelo']}</td>
-                                    <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
+                                    <td>{$row3['matricula']}</td>
+                                    <td>{$row3['modelo']}</td>
+                                    <td><a href='consulta_coche.php?matricula={$row3['matricula']}'>Ver más</a></td>
                                 </tr>
                             </tbody>
                             </table>";
                             }
                             }
                             ?>                  
-                <?php
+               <?php
                             // Consultar los datos
                             $sql = "SELECT * FROM coche inner join gama on coche.codgama = gama.codgama  where coche.codgama = 'T1'";
-                            $result = $conn->query($sql);
-                            if ($result === false) {
+                            $result4 = $conn->query($sql);
+                            if ($result4 === false) {
                             die("Error en la consulta: " . $conn->error);
                             }
-                            if ($result->num_rows > 0) {
-                            while($row = $result->fetch_assoc()) {
+                            if ($result4->num_rows > 0) {
+                            while($row4 = $result->fetch_assoc()) {
                             echo "
-                            <h1>Gama {$row['nomgama']}</h1>
+                            <h1>Gama {$row4['nomgama']}</h1>
                             <table class="center tabla">
                             <thead>
                                 <tr>
@@ -156,16 +156,16 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>{$row['matricula']}</td>
-                                    <td>{$row['modelo']}</td>
-                                    <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
+                                    <td>{$row4['matricula']}</td>
+                                    <td>{$row4['modelo']}</td>
+                                    <td><a href='consulta_coche.php?matricula={$row4['matricula']}'>Ver más</a></td>
                                 </tr>
                             </tbody>
                             </table>";
                             }
                             }
-                            ?>                                  
+                            ?>                          
             </div>
         </main>
     </body>
-</html> -->
+</html>
