@@ -55,7 +55,8 @@
                             if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()) {
                             echo "
-                            <h1>Gama {$row['nomgama']}</h1>";                            
+                            <h1>Gama {$row['nomgama']}</h1>
+                            <h2>Precio {$row['precio']}</h2>";                            
                             }
                             }
                 ?>
