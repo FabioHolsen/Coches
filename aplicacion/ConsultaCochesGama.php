@@ -45,53 +45,202 @@
         </header>
         <main>
             <div class="tablaDiv">
-            <?php
-                            // Consultar los datos
-                            $sql = "SELECT * FROM gama  where codgama = 'F1'";
-                            $result = $conn->query($sql);
-                            if ($result === false) {
-                            die("Error en la consulta: " . $conn->error);
-                            }
-                            if ($result->num_rows > 0) {
-                            while($row = $result->fetch_assoc()) {
-                            echo "
-                            <h1>Gama {$row['nomgama']}</h1>
-                            <h2>Precio {$row['precio']}</h2>";                            
-                            }
-                            }
-                ?>
-                <table class='center tabla'>
-                    <thead>
-                        <tr>
-                        <th>Matricula</th>
-                        <th>Modelo</th>
-                        <th>Consulta del coche</th>
-                        </tr>
-                    </thead>
-                <?php
-                            // Consultar los datos
-                            $sql = "SELECT * FROM coche inner join gama on coche.codgama = gama.codgama  where coche.codgama = 'F1'";
-                            $result = $conn->query($sql);
-                            if ($result === false) {
-                            die("Error en la consulta: " . $conn->error);
-                            }
-                            if ($result->num_rows > 0) {
-                            while($row = $result->fetch_assoc()) {
-                            echo "
-                            
-                                <tbody>
-                                    <tr>
-                                        <td>{$row['matricula']}</td>
-                                        <td>{$row['modelo']}</td>
-                                        <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
-                                    </tr>
-                                </tbody>
-                            ";
-                            
-                            }
-                            }
-                ?>
-                </table>        
+                <div class="gama">
+                    <?php
+                                // Consultar los datos
+                                $sql = "SELECT * FROM gama  where codgama = 'F1'";
+                                $result = $conn->query($sql);
+                                if ($result === false) {
+                                die("Error en la consulta: " . $conn->error);
+                                }
+                                if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()) {
+                                echo "
+                                <h1>Gama {$row['nomgama']}</h1>
+                                <h2>Precio {$row['precio']}</h2>";                            
+                                }
+                                }
+                    ?>
+                    <table class='center tabla'>
+                        <thead>
+                            <tr>
+                            <th>Matricula</th>
+                            <th>Modelo</th>
+                            <th>Consulta del coche</th>
+                            </tr>
+                        </thead>
+                    <?php
+                                // Consultar los datos
+                                $sql = "SELECT * FROM coche where coche.codgama = 'F1'";
+                                $result = $conn->query($sql);
+                                if ($result === false) {
+                                die("Error en la consulta: " . $conn->error);
+                                }
+                                if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()) {
+                                echo "
+                                
+                                    <tbody>
+                                        <tr>
+                                            <td>{$row['matricula']}</td>
+                                            <td>{$row['modelo']}</td>
+                                            <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
+                                        </tr>
+                                    </tbody>
+                                ";
+                                
+                                }
+                                }
+                    ?>
+                    </table>
+                </div>
+                <div class="gama">
+                    <?php
+                                // Consultar los datos
+                                $sql = "SELECT * FROM gama  where codgama = 'F2'";
+                                $result = $conn->query($sql);
+                                if ($result === false) {
+                                die("Error en la consulta: " . $conn->error);
+                                }
+                                if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()) {
+                                echo "
+                                <h1>Gama {$row['nomgama']}</h1>
+                                <h2>Precio {$row['precio']}</h2>";                            
+                                }
+                                }
+                    ?>
+                    <table class='center tabla'>
+                        <thead>
+                            <tr>
+                            <th>Matricula</th>
+                            <th>Modelo</th>
+                            <th>Consulta del coche</th>
+                            </tr>
+                        </thead>
+                    <?php
+                                // Consultar los datos
+                                $sql = "SELECT * FROM coche where coche.codgama = 'F2'";
+                                $result = $conn->query($sql);
+                                if ($result === false) {
+                                die("Error en la consulta: " . $conn->error);
+                                }
+                                if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()) {
+                                echo "
+                                
+                                    <tbody>
+                                        <tr>
+                                            <td>{$row['matricula']}</td>
+                                            <td>{$row['modelo']}</td>
+                                            <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
+                                        </tr>
+                                    </tbody>
+                                ";
+                                
+                                }
+                                }
+                    ?>
+                    </table>
+                </div>
+                <div class="gama">
+                    <?php
+                                // Consultar los datos
+                                $sql = "SELECT * FROM gama  where codgama = 'L1'";
+                                $result = $conn->query($sql);
+                                if ($result === false) {
+                                die("Error en la consulta: " . $conn->error);
+                                }
+                                if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()) {
+                                echo "
+                                <h1>Gama {$row['nomgama']}</h1>
+                                <h2>Precio {$row['precio']}</h2>";                            
+                                }
+                                }
+                    ?>
+                    <table class='center tabla'>
+                        <thead>
+                            <tr>
+                            <th>Matricula</th>
+                            <th>Modelo</th>
+                            <th>Consulta del coche</th>
+                            </tr>
+                        </thead>
+                    <?php
+                                // Consultar los datos
+                                $sql = "SELECT * FROM coche where coche.codgama = 'L1'";
+                                $result = $conn->query($sql);
+                                if ($result === false) {
+                                die("Error en la consulta: " . $conn->error);
+                                }
+                                if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()) {
+                                echo "
+                                
+                                    <tbody>
+                                        <tr>
+                                            <td>{$row['matricula']}</td>
+                                            <td>{$row['modelo']}</td>
+                                            <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
+                                        </tr>
+                                    </tbody>
+                                ";
+                                
+                                }
+                                }
+                    ?>
+                    </table>
+                </div>      
+                <div class="gama">
+                    <?php
+                                // Consultar los datos
+                                $sql = "SELECT * FROM gama  where codgama = 'T1'";
+                                $result = $conn->query($sql);
+                                if ($result === false) {
+                                die("Error en la consulta: " . $conn->error);
+                                }
+                                if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()) {
+                                echo "
+                                <h1>Gama {$row['nomgama']}</h1>
+                                <h2>Precio {$row['precio']}</h2>";                            
+                                }
+                                }
+                    ?>
+                    <table class='center tabla'>
+                        <thead>
+                            <tr>
+                            <th>Matricula</th>
+                            <th>Modelo</th>
+                            <th>Consulta del coche</th>
+                            </tr>
+                        </thead>
+                    <?php
+                                // Consultar los datos
+                                $sql = "SELECT * FROM coche where coche.codgama = 'T1'";
+                                $result = $conn->query($sql);
+                                if ($result === false) {
+                                die("Error en la consulta: " . $conn->error);
+                                }
+                                if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()) {
+                                echo "
+                                
+                                    <tbody>
+                                        <tr>
+                                            <td>{$row['matricula']}</td>
+                                            <td>{$row['modelo']}</td>
+                                            <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
+                                        </tr>
+                                    </tbody>
+                                ";
+                                
+                                }
+                                }
+                    ?>
+                    </table>
+                </div>      
             </div>
         </main>
     </body>
