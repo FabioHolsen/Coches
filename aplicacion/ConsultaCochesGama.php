@@ -55,11 +55,18 @@
                             if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()) {
                             echo "
-                            <h1>Gama {$row['nomgama']}";
-                            
+                            <h1>Gama {$row['nomgama']}</h1>";                            
                             }
                             }
                 ?>
+                <table class='center tabla'>
+                    <thead>
+                        <tr>
+                        <th>Matricula</th>
+                        <th>Modelo</th>
+                        <th>Consulta del coche</th>
+                        </tr>
+                    </thead>
                 <?php
                             // Consultar los datos
                             $sql = "SELECT * FROM coche inner join gama on coche.codgama = gama.codgama  where coche.codgama = 'F1'";
@@ -70,14 +77,7 @@
                             if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()) {
                             echo "
-                            <table class='center tabla'>
-                                <thead>
-                                    <tr>
-                                        <th>Matricula</th>
-                                        <th>Modelo</th>
-                                        <th>Consulta del coche</th>
-                                    </tr>
-                                </thead>
+                            
                                 <tbody>
                                     <tr>
                                         <td>{$row['matricula']}</td>
@@ -85,11 +85,12 @@
                                         <td><a href='consulta_coche.php?matricula={$row['matricula']}'>Ver más</a></td>
                                     </tr>
                                 </tbody>
-                            </table>";
+                            ";
                             
                             }
                             }
-                ?>                
+                ?>
+                </table>        
             </div>
         </main>
     </body>
