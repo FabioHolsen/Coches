@@ -45,7 +45,7 @@
         </header>
         <main>
             <div class="tablaDiv">
-                <table class="center tabla">
+                <table class="tabla">
                     <thead>
                         <tr>
                             <th>Matricula</th>

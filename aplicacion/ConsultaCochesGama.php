@@ -61,7 +61,7 @@
                                 }
                                 }
                     ?>
-                    <table class='center tabla'>
+                    <table class='tabla'>
                         <thead>
                             <tr>
                             <th>Matricula</th>
@@ -110,7 +110,7 @@
                                 }
                                 }
                     ?>
-                    <table class='center tabla'>
+                    <table class='tabla'>
                         <thead>
                             <tr>
                             <th>Matricula</th>
@@ -159,7 +159,7 @@
                                 }
                                 }
                     ?>
-                    <table class='center tabla'>
+                    <table class='tabla'>
                         <thead>
                             <tr>
                             <th>Matricula</th>
@@ -208,7 +208,7 @@
                                 }
                                 }
                     ?>
-                    <table class='center tabla'>
+                    <table class='tabla'>
                         <thead>
                             <tr>
                             <th>Matricula</th>
