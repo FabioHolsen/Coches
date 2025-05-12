@@ -45,7 +45,7 @@
         </header>
         <main>
             <div class="inicio">
-                <h1>Información del coche:</h1>
+                <h1>Información del cliente:</h1>
             </div>
             <div class="tablaDiv">
                 <table class="center tabla">

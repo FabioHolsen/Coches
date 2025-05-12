@@ -4,7 +4,7 @@ CREATE DATABASE autocamp;
 USE autocamp;
 
 CREATE TABLE cliente (
-    codcli character(4) NOT NULL,
+    codcli integer NOT NULL,
     nombre character varying(20),
     apellido character varying(40),
     direccion character varying(50),
@@ -38,9 +38,9 @@ CREATE TABLE reserva (
     f_fin date,
     dias integer,
     lugar character varying(50),
-    importe float DEFAULT 0,
-    cgama character varying(2) NOT NULL,
+    codgama character varying(2) NOT NULL,
     codcliente character varying(4) NOT NULL,
+    importe float DEFAULT 0,
     coche character(7),
     f_recogida date,
     f_devolucion date,
@@ -53,9 +53,9 @@ alter table coche add foreign key (codgama) references gama (codgama);
 alter table reserva add foreign key (cgama) references gama (codgama);
 alter table reserva add foreign key (codcliente) references cliente (codcli);
 
-INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('1   ', 'Pepe', 'García', 'Ausiach March, 23', 'pep@gmailx.com');
-INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('2   ', 'Lucas', 'Iniesta', 'Ausiach March, 23', 'lui@gmailx.com');
-INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES ('3   ', 'Ana', 'Lorca Sanz', 'Ausiach March, 23', 'annta@gmailx.com');
+INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES (1, 'Pepe', 'García', 'Ausiach March, 23', 'pep@gmailx.com');
+INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES (2, 'Lucas', 'Iniesta', 'Ausiach March, 23', 'lui@gmailx.com');
+INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES (3, 'Ana', 'Lorca Sanz', 'Ausiach March, 23', 'annta@gmailx.com');
 
 INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('L1', 'Lujo', 2, 23.00);
 INSERT INTO gama (codgama, nomgama, stock, precio) VALUES ('F2', 'Familiar', 3, 23.00);
@@ -74,6 +74,9 @@ INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto,
 INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('6666NNN', 'Fiesta', 'F', 'M', 5, 3, 'foto8.jpg', 'F2');
 INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('6612NNN', 'Audi A3', 'F', 'M', 5, 3, 'foto9.jpg', 'F2');
 
+INSERT INTO reserva (codreserva,fecha_res,f_inicio,f_fin,dias,lugar,codgama,codcliente,importe,coche,f_recogida,f_devolucion,s_motor,s_plazas) VALUES
+(1,'15/05/2025','20/05/2025',datediff(days,f_inicio,f_fin),'Oficina 1','L1',1,(select gama.precio from gama where gama.codgama = reserva.codgama),
+'3333BBB','15/05/2025','21/05/2025',(select coche.motor from coche where coche.matricula = reserva.coche),(select coche.plazas from coche where coche.matricula = reserva.coche));
 
 
 
