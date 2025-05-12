@@ -39,7 +39,7 @@ CREATE TABLE reserva (
     dias integer,
     lugar character varying(50),
     codgama character varying(2) NOT NULL,
-    codcliente character varying(4) NOT NULL,
+    codcliente int NOT NULL,
     importe float DEFAULT 0,
     coche character(7),
     f_recogida date,
