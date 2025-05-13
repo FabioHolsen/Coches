@@ -52,11 +52,11 @@ INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES (lpad('1'
 INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES (lpad('2',4,'0'), 'Lucas', 'Iniesta', 'Ausiach March, 23', 'lui@gmailx.com');
 INSERT INTO cliente (codcli, nombre, apellido, direccion, mail) VALUES (lpad('3',4,'0'), 'Ana', 'Lorca Sanz', 'Ausiach March, 23', 'annta@gmailx.com');
 
-INSERT INTO gama (codgama, nomgama, stock, precio, combustible, transmision, plaza, maletas) VALUES ('L1', 'Lujo', 2, 23.00,'E','A',7,4);
-INSERT INTO gama (codgama, nomgama, stock, precio, combustible, transmision, plaza, maletas) VALUES ('T1', '4 x 4', 1, 23.00,'E','A',7,4);
-INSERT INTO gama (codgama, nomgama, stock, precio, combustible, transmision, plaza, maletas) VALUES ('F1', 'Familiar Electrico', 4, 15.00,'E','A',5,4);
-INSERT INTO gama (codgama, nomgama, stock, precio, combustible, transmision, plaza, maletas) VALUES ('F2', 'Familiar Gasolina', 3, 23.00,'F','M',5,4);
-INSERT INTO gama (codgama, nomgama, stock, precio. combustible, transmision, plaza, maletas) VALUES ('F3', 'Familiar Hibrido', 3, 20.00,'H','A',5,4);
+INSERT INTO gama (codgama, nomgama, stock, precio, combustible, transmision, plazas, maletas) VALUES ('L1', 'Lujo', 2, 23.00,'E','A',7,4);
+INSERT INTO gama (codgama, nomgama, stock, precio, combustible, transmision, plazas, maletas) VALUES ('T1', '4 x 4', 1, 23.00,'E','A',7,4);
+INSERT INTO gama (codgama, nomgama, stock, precio, combustible, transmision, plazas, maletas) VALUES ('F1', 'Familiar Electrico', 4, 15.00,'E','A',5,4);
+INSERT INTO gama (codgama, nomgama, stock, precio, combustible, transmision, plazas, maletas) VALUES ('F2', 'Familiar Gasolina', 3, 23.00,'F','M',5,4);
+INSERT INTO gama (codgama, nomgama, stock, precio. combustible, transmision, plazas, maletas) VALUES ('F3', 'Familiar Hibrido', 3, 20.00,'H','A',5,4);
 
 
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('1111AAA', 'Volvo z', 'foto1.jpg', 'F1');
