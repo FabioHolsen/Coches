@@ -72,7 +72,7 @@
                         echo " <tr>
                         <td>{$row['matricula']}</td>
                         <td>{$row['modelo']}</td>
-                        <td{$row['codgama']}</td>
+                        <td>{$row['nomgama']}</td>
                         <td><img src='../media/{$row['foto']}' class='imgn'></td>
                         </tr>
                         
