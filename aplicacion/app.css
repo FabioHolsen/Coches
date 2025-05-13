@@ -126,11 +126,11 @@ td a{
     text-align: center;
 }
 
-.volver {
+.volver a {
     padding-left: 50px ;
     text-decoration: none;
     color: black;
 }
-.volver:hover {
+.volver a:hover {
     color: #1581ed;
 }
