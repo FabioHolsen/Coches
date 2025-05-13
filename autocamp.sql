@@ -36,7 +36,7 @@ CREATE TABLE reserva (
     fecha_res date NOT NULL,
     f_inicio date,
     f_fin date,
-    dias as cast(datediff(day,f_inicio,f_fin) as integer),
+    dias int,
     lugar character varying(50),
     codgama character varying(2) NOT NULL,
     codcliente int NOT NULL,
