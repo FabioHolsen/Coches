@@ -128,4 +128,9 @@ td a{
 
 .volver {
     padding-left: 50px ;
+    text-decoration: none;
+    color: black;
+}
+.volver:hover {
+    color: #1581ed;
 }
