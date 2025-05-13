@@ -83,7 +83,7 @@
                     </tbody>
                 </table>
             </div>
-            <h2><a href="./ConsultaCoches.php">Volver</h2></a>
+            <h2 class="volver"><a href="./ConsultaCoches.php">Volver</h2></a>
         </main>
     </body>
 </html>

@@ -251,7 +251,7 @@
                     </table>
                 </div>      
             </div>
-            <h2><a href="./MenuConsultas.html">Volver</h2></a>
+            <h2 class="volver"><a href="./MenuConsultas.html">Volver</h2></a>
         </main>
     </body>
 </html>
