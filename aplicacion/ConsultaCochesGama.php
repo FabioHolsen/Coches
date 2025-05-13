@@ -58,7 +58,6 @@
                                 echo "
                                 <h1>Gama {$row['nomgama']}</h1>
                                 <h2>Precio: {$row['precio']} Euros</h2>
-                                <h2>Precio: {$row['precio']} Euros</h2>
                                 <h2>Plazas: {$row['plazas']} Plazas</h2>
                                 <h2>Maletas: {$row['maletas']} Maletas</h2>";                            
                                 }
@@ -162,7 +161,6 @@
                                 echo "
                                 <h1>Gama {$row['nomgama']}</h1>
                                 <h2>Precio: {$row['precio']} Euros</h2>
-                                <h2>Precio: {$row['precio']} Euros</h2>
                                 <h2>Plazas: {$row['plazas']} Plazas</h2>
                                 <h2>Maletas: {$row['maletas']} Maletas</h2>";                            
                                 }
@@ -213,7 +211,6 @@
                                 while($row = $result->fetch_assoc()) {
                                 echo "
                                 <h1>Gama {$row['nomgama']}</h1>
-                                <h2>Precio: {$row['precio']} Euros</h2>
                                 <h2>Precio: {$row['precio']} Euros</h2>
                                 <h2>Plazas: {$row['plazas']} Plazas</h2>
                                 <h2>Maletas: {$row['maletas']} Maletas</h2>";                            
