@@ -56,7 +56,7 @@ INSERT INTO gama (codgama, nomgama, stock, precio, combustible, transmision, pla
 INSERT INTO gama (codgama, nomgama, stock, precio, combustible, transmision, plazas, maletas) VALUES ('T1', '4 x 4', 1, 23.00,'E','A',7,4);
 INSERT INTO gama (codgama, nomgama, stock, precio, combustible, transmision, plazas, maletas) VALUES ('F1', 'Familiar Electrico', 4, 15.00,'E','A',5,4);
 INSERT INTO gama (codgama, nomgama, stock, precio, combustible, transmision, plazas, maletas) VALUES ('F2', 'Familiar Gasolina', 3, 23.00,'F','M',5,4);
-INSERT INTO gama (codgama, nomgama, stock, precio. combustible, transmision, plazas, maletas) VALUES ('F3', 'Familiar Hibrido', 3, 20.00,'H','A',5,4);
+INSERT INTO gama (codgama, nomgama, stock, precio, combustible, transmision, plazas, maletas) VALUES ('F3', 'Familiar Hibrido', 3, 20.00,'H','A',5,4);
 
 
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('1111AAA', 'Volvo z', 'foto1.jpg', 'F1');
