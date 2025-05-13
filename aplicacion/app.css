@@ -131,6 +131,6 @@ td a{
     text-decoration: none;
     color: black;
 }
-.volver :hover {
+.volver:hover {
     color: #1581ed;
 }
