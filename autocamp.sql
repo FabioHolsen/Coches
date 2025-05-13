@@ -36,7 +36,7 @@ CREATE TABLE reserva (
     fecha_res date NOT NULL,
     f_inicio date,
     f_fin date,
-    dias integer,
+    dias cast(datediff(day,f_inicio,f_fin)),
     lugar character varying(50),
     codgama character varying(2) NOT NULL,
     codcliente int NOT NULL,
@@ -74,8 +74,8 @@ INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto,
 INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('6666NNN', 'Fiesta', 'F', 'M', 5, 3, 'foto8.jpg', 'F2');
 INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('6612NNN', 'Audi A3', 'F', 'M', 5, 3, 'foto9.jpg', 'F2');
 
-INSERT INTO reserva (codreserva,fecha_res,f_inicio,f_fin,dias,lugar,codgama,codcliente,importe,coche,f_recogida,f_devolucion,s_motor,s_plazas) VALUES
-(1,'15/05/2025','20/05/2025',datediff(day,'15/05/2025','20/05/2025'),'Oficina 1','L1',1,(select gama.precio from gama where gama.codgama = reserva.codgama),
+INSERT INTO reserva (codreserva,fecha_res,f_inicio,f_fin,lugar,codgama,codcliente,importe,coche,f_recogida,f_devolucion,s_motor,s_plazas) VALUES
+(1,'15/05/2025','20/05/2025','Oficina 1','L1',1,(select gama.precio from gama where gama.codgama = reserva.codgama),
 '3333BBB','15/05/2025','21/05/2025',(select coche.motor from coche where coche.matricula = reserva.coche),(select coche.plazas from coche where coche.matricula = reserva.coche));
 
 
