@@ -53,10 +53,7 @@
                         <tr>
                             <th>Matricula</th>
                             <th>Modelo</th>
-                            <th>Combustible</th>
-                            <th>Motor</th>
-                            <th>Plazas</th>
-                            <th>Maletas</th>
+                            <th>Gama</th>
                             <th>Imagen referencia</th>
                         </tr>
                     </thead>
@@ -65,7 +62,7 @@
 
                         $matricula = $_GET['matricula'];
                         // Consultar los datos
-                        $sql = "SELECT * FROM coche where matricula='{$matricula}'";
+                        $sql = "SELECT * FROM coche inner join gama on coche.codgama = gama.codgama where matricula='{$matricula}'";
                         $result = $conn->query($sql);
                         if ($result === false) {
                         die("Error en la consulta: " . $conn->error);
@@ -75,10 +72,7 @@
                         echo " <tr>
                         <td>{$row['matricula']}</td>
                         <td>{$row['modelo']}</td>
-                        <td>{$row['combustible']}</td>
-                        <td>{$row['motor']}</td>
-                        <td>{$row['plazas']}</td>
-                        <td>{$row['maletas']}</td>
+                        <td{$row['codgama']}</td>
                         <td><img src='../media/{$row['foto']}' class='imgn'></td>
                         </tr>
                         
@@ -89,7 +83,7 @@
                     </tbody>
                 </table>
             </div>
-            <h2><a href="./ConsultaCoche.html">Volver</h2></a>
+            <h2><a href="./ConsultaCoche.php">Volver</h2></a>
         </main>
     </body>
 </html>
