@@ -44,6 +44,7 @@
             </div>
         </header>
         <main>
+            <h1 style="align-text:center">Consulta de coches</h1>
             <div class="tablaDiv">
                 <table class="tabla">
                     <thead>
