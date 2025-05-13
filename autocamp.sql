@@ -63,8 +63,8 @@ INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('1111AAA', 'Volvo z
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('1112AAA', 'Volvo EX40', 'foto2.jpg', 'F1');
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('1001BBB', 'Ford Focus', 'foto3.jpg', 'F3');
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('1003TTT', 'Citroen e-c3', 'foto4.jpg', 'T1');
-INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('3003LLL', 'Mercedes', 'E', 'foto5.jpg', 'L1');
-INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('3333BBB', 'Volvo XC90', 'E', 'foto6.jpg', 'L1');
+INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('3003LLL', 'Mercedes', 'foto5.jpg', 'L1');
+INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('3333BBB', 'Volvo XC90', 'foto6.jpg', 'L1');
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('4444NNN', 'Volvo XC1', 'foto7.jpg', 'F3');
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('1113AAA', 'Audi A3', 'foto8.jpg', 'F3');
 INSERT INTO coche (matricula, modelo, foto, codgama) VALUES ('6666NNN', 'Fiesta', 'foto9.jpg', 'F1');
