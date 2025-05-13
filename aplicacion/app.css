@@ -134,3 +134,7 @@ td a{
 .volver:hover {
     color: #1581ed;
 }
+
+titulo {
+    text-align: center;
+}
