@@ -65,7 +65,7 @@
                     <tbody>
                         <?php
                         // Consultar los datos
-                        $sql = "SELECT *, concat(cliente.nombre,' ',cliente.apellid) as nombreC FROM reserva inner join cliente on reserva.codcliente = cliente.codcli inner join gama on reserva.gama = gama.codgama;";
+                        $sql = "SELECT *, concat(cliente.nombre,' ',cliente.apellido) as nombreC FROM reserva inner join cliente on reserva.codcliente = cliente.codcli inner join gama on reserva.gama = gama.codgama;";
                         $result = $conn->query($sql);
                         if ($result === false) {
                         die("Error en la consulta: " . $conn->error);
