@@ -75,7 +75,7 @@ INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto,
 INSERT INTO coche (matricula, modelo, combustible, motor, plazas, maletas, foto, codgama) VALUES ('6612NNN', 'Audi A3', 'F', 'M', 5, 3, 'foto9.jpg', 'F2');
 
 INSERT INTO reserva (codreserva,fecha_res,f_inicio,f_fin,lugar,codgama,codcliente,importe,coche,f_recogida,f_devolucion,s_motor,s_plazas) VALUES
-(1,'2025/05/15','2025/05/15','2025/05/20',(cast(datediff(day,f_inicio,f_fin)) as int),'Oficina 1','L1',1,(select gama.precio from gama where gama.codgama = reserva.codgama),
+(1,'2025/05/15','2025/05/15','2025/05/20',(cast(datediff(f_inicio,f_fin)) as int),'Oficina 1','L1',1,(select gama.precio from gama where gama.codgama = reserva.codgama),
 '3333BBB','2025/05/15','2025/05/20',(select coche.motor from coche where coche.matricula = reserva.coche),(select coche.plazas from coche where coche.matricula = reserva.coche));
 
 
