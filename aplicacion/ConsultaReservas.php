@@ -80,7 +80,7 @@
                         <td>{$row['f_inicio']}</td>
                         <td>{$row['f_fin']}</td>
                         <td>{$row['dias']}</td>
-                        <td>{$row['importe']}</td>
+                        <td>{$row['importe']} Euros</td>
                         <td>{$row['f_devolucion']}</td>
                         </tr>
                         
@@ -91,7 +91,7 @@
                     </tbody>
                 </table>
             </div>
-            <h2><a href="./MenuConsultas.html">Volver</h2></a>
+            <h2 class="volver"><a href="./MenuConsultas.html">Volver</h2></a>
         </main>
     </body>
 </html>
