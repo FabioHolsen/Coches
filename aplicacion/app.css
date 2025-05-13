@@ -121,3 +121,7 @@ td a{
 .gama {
     width: 100%;
 }
+
+.gama h1 {
+    text-align: center;
+}
