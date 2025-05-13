@@ -91,7 +91,7 @@
                     </tbody>
                 </table>
             </div>
-            <h2 class="volver"><a href="./MenuConsultas.html">Volver</h2></a>
+            <h2><a class="volver" href="./MenuConsultas.html">Volver</h2></a>
         </main>
     </body>
 </html>
