@@ -252,7 +252,7 @@
                     </table>
                 </div>      
             </div>
-            <h2 class="volver"><a href="./MenuConsultas.html">Volver</h2></a>
+            <h2><a  class="volver" href="./MenuConsultas.html">Volver</a></h2>
         </main>
     </body>
 </html>
