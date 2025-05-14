@@ -44,7 +44,7 @@
             </div>
         </header>
         <main>
-            <h1 class="titulo">Consulta de coches por gama:</h1>
+            <h1 class="tituloPag">Consulta de coches por gama:</h1>
             <div class="tablaDiv">
                 <div class="gama">
                     <?php

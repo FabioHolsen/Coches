@@ -45,7 +45,7 @@
         </header>
         <main>
             <div class="inicio">
-                <h1 class="titulo">Lista de reservas:</h1>
+                <h1 class="tituloPag">Lista de reservas:</h1>
             </div>
             <div class="tablaDiv">
                 <table class="center tabla">
